@@ -3,12 +3,13 @@ public class Main {
         Ogrenci[] ogrenciler = {
                 new Ogrenci("1973104001", 0.0),
                 new Ogrenci("Gökhan", "Bilgisayar Müh", "1985104001", 0.0, 2024),
-                new Ogrenci("Ayşe", "Makine Müh", "1985104001",0.0 , 2009),
-                new Ogrenci("Elif", "Elektrik-Elektronik Müh", "2020104001", 1.98, 2019)
+                new Ogrenci("Ayşe", "Makine Müh", "1985104001",0.0 , 2024),
+                new Ogrenci("Elif", "Elektrik-Elektronik Müh", "2020104001", 1.98, 2019),
+                new Ogrenci("Orkun","Bilgisayar Müh","2023141063",2.7,2018)
         };
 
-        System.out.println("Öğrenci Bilgileri");
-        for (int i = 0; i < ogrenciler.length; i++) {
+        System.out.println("Öğrencilerin Bilgileri");
+        for (int i = 0; i < ogrenciler.length-1; i++) {
             kontrolGano(ogrenciler[i].getGano());
             System.out.println("OGR-" + (i+1) + " " + ogrenciler[i]);
         }
