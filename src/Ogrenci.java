@@ -4,11 +4,11 @@ public class Ogrenci {
     Ogrenci ogrenci;
     private String bolum;
     private double gano;
+
+    private  int girisYili;
+    private  int girisSirsai;
+    private  int bolumKodu;
     private String ogrNo;
-    private int girisyili;
-
-    private double harc;
-
 
     public Ogrenci (String ad , String bolum){
         this.ad = ad;
@@ -17,29 +17,19 @@ public class Ogrenci {
     public Ogrenci (Ogrenci ogrenci){
         this.ogrenci = ogrenci;
     }
-    public Ogrenci (String ogrNo, double gano){
-        this.ogrNo = ogrNo;
+    public Ogrenci (double gano){
         this.gano = gano;
     }
-    public Ogrenci(String ad, String bolum,  String ogrNo, double gano,int girisyili) {
+    public Ogrenci(String ad, String bolum, int girisyili, double gano,int bolumKodu,int girisSirsai) {
         this.ad = ad;
         this.bolum = bolum;
         this.gano = gano;
-        this.ogrNo = ogrNo;
-        this.girisyili= girisyili;
-
+        this.girisYili= girisyili;
+        this.ogrNo = String.valueOf(girisyili) + String.valueOf(bolumKodu)+ String.valueOf(girisSirsai);
     }
-    public Ogrenci (){
-
-    }
-
     @Override
     public String toString() {
-        return ad +" "+  bolum + " "+gano + " "+ ogrNo + " ";
-    }
-    public double harcHesapla (){
-        int gecikmeYili = 2020 - girisyili;
-        return Math.max(gecikmeYili * 480, 0);
+        return ad +" "+  bolum + " "+gano + " " + ogrNo;
     }
 
     public String getAd() {
@@ -74,20 +64,25 @@ public class Ogrenci {
         this.gano = gano;
     }
 
+
+    public int getGirisyili() {
+        return girisYili;
+    }
+
+    public void setGirisyili(int girisyili) {
+        this.girisYili = girisyili;
+    }
+
     public String getOgrNo() {
         return ogrNo;
     }
 
-    public void setOgrNo(String ogrNo) {
-        this.ogrNo = ogrNo;
-    }
+    public double harcHesapla (){
+        // anlık yılı 2023 kabul ettim.
+        int gecikmeYili = 2019 - girisYili;
+        return Math.max(gecikmeYili * 480, 0);
+    }
 
-    public int getGirisyili() {
-        return girisyili;
-    }
 
-    public void setGirisyili(int girisyili) {
-        this.girisyili = girisyili;
-    }
 
 }
