@@ -5,6 +5,6 @@
 ![Ekran görüntüsü 2024-03-09 183451](https://github.com/orknplt/NesneOdev2/assets/162059955/f0126cab-104e-4806-b450-281de6f78b8c)
 <br></br>
 # UML diagramı
-![Ekran görüntüsü 2024-03-09 183515](https://github.com/orknplt/NesneOdev2/assets/162059955/ab5311c8-c612-44b3-8376-3ad2bfdd24f4)
+![WhatsApp Görsel 2024-03-11 saat 23 58 09_78f353a0](https://github.com/orknplt/NesneOdev2/assets/162059955/475f8cbc-0e3e-4708-83bd-44f1ce135c58)
 
 
